@@ -2,8 +2,8 @@ let leftShip;
 let rightShip; 
 let allDebris = [];
 
-
-const NUM_DEBRIS = 30;
+// wanna make it more crazy?
+const NUM_DEBRIS = 50;
 
 
 let leftScore; 

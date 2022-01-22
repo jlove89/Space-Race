@@ -3,21 +3,20 @@ class Debris {
   
     constructor() {
       this.r = 5;
-      this.resetDebris();
+        this.resetDebris();
     }
     
     resetDebris() {
-        
       this.y = random(height - 70);
-      
-      let spawnLeftSide = random(1) < 0.5;
+        let spawnLeftSide = random(1) < 0.5;
       
       if (spawnLeftSide) {
           this.x = random(-width, 0);	
-          this.isGoingLeft = false;
-      } else {
-          this.x = random(width, width * 2);
-        this.isGoingLeft = true;
+            this.isGoingLeft = false;
+      } 
+      else {
+        this.x = random(width, width * 2);
+          this.isGoingLeft = true;
       }
       
       
@@ -30,8 +29,8 @@ class Debris {
           this.x ++;
       }
       
-      if (this.isOffScreen()) {
-          this.resetDebris();
+        if (this.isOffScreen()) {
+              this.resetDebris();
       }
     }
     
@@ -39,7 +38,8 @@ class Debris {
     isOffScreen() {
       if (this.isGoingLeft && this.x < -5) {
           return true;
-      } else if(!this.isGoingLeft && this.x > width + 5) {
+      } 
+      else if(!this.isGoingLeft && this.x > width + 5) {
           return true;
       }
       return false;

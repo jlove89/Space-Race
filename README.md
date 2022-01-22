@@ -1,3 +1,3 @@
-This is my first game project by myself, I hope you enjoy and thank you for playing!
+# First Game Project
 
 # Space-Race
